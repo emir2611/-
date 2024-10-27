@@ -1,0 +1,193 @@
+@import 'normalize.scss';
+
+// === Mixins === 
+@mixin font-Roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin font-Lato {
+    font-family: "Lato", sans-serif;
+}
+
+// === / Mixins === 
+//=== Common ===
+body {
+    @include font-Roboto;
+}
+
+.section-outer {}
+
+.section-inner {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+// === / Common ===
+body 
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+// === header ===
+.hero-section {
+    background-image: url('/img/Rectangle 3.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(244, 240, 240);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.text {
+    position: absolute;
+    z-index: 2; 
+    color: white; 
+    text-align: center; 
+    font-size: 23px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 61, 30, 0.808);
+    z-index: 2;
+}
+
+section.hero-son * {
+    position: relative;
+    z-index: 5;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:0  14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 46px;
+    margin: 0;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-login {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 84.38px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero-price {
+    font-size: 18px;
+}
+
+.hero-button {
+    @include font-Roboto;
+
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgb(227, 227, 227);
+    color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #f1c40f;
+    color: white;
+}
+// === / header ===
+
+// === Photo ===
+.section-Photo {}
+
+// === / Photo ===
+
+// === Possibilities ===
+.section-Possibilities {}
+
+// === / Possibilities ===
+
+// === Plans ===
+.section-Plans {}
+
+// === / Plans ===
+
+// === Free ===
+.section-Free {}
+
+// === / Free ===
+
+// === Registration ===
+.section-Registration {}
+
+// === / Registration ===
+
+// === Footer ===
+.section-Footer {}
+
+// === / Footer ===
